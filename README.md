@@ -109,3 +109,11 @@ You can download the RML2025Series datasets from the following sources:
 ## 🚀 Usage
 
 Please refer to the corresponding `load_dataset.py` scripts for how to use each dataset.
+
+
+---
+
+## 🤖 AI Assistance Disclosure
+
+This README file was prepared with the assistance of AI tools to enhance clarity and quality. All technical content and dataset descriptions were reviewed and verified by the authors to ensure accuracy.
+
