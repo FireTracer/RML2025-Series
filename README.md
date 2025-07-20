@@ -113,7 +113,7 @@ Please refer to the corresponding `load_dataset.py` scripts for how to use each 
 
 ---
 
-## 🤖 AI Assistance Disclosure
+## 🤖 AI Assistance
 
 This README file was prepared with the assistance of AI tools to enhance clarity and quality. All technical content and dataset descriptions were reviewed and verified by the authors to ensure accuracy.
 
