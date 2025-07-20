@@ -98,7 +98,7 @@ The following table summarizes the impairment configurations for each dataset va
 You can download the RML2025Series datasets from the following sources:
 
 - **Google Drive**: [Download Link](https://drive.google.com/..................)
-- **Baidu Netdisk**: [Download Link](https://pan.baidu.com/s/..................) (Extraction Code: `xxxx`)
+- **Baidu Netdisk**: [Download Link](https://pan.baidu.com/s/1alhSU_boq4kBlpH_9A7g5g?pwd=fire) (Extraction Code: `fire`)
 (waiting load...)
 > ⚠️ Note: Please make sure to unzip the files into the `data/` directory to use the provided loading scripts.
 
