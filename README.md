@@ -93,6 +93,15 @@ The following table summarizes the impairment configurations for each dataset va
 - All time delays and gain values are normalized and represent the tap profiles in multipath fading scenarios.
 
 
+## 📥 Dataset Download
+
+You can download the RML2025Series datasets from the following sources:
+
+- **Google Drive**: [Download Link](https://drive.google.com/..................)
+- **Baidu Netdisk**: [Download Link](https://pan.baidu.com/s/..................) (Extraction Code: `xxxx`)
+(waiting load...)
+> ⚠️ Note: Please make sure to unzip the files into the `data/` directory to use the provided loading scripts.
+
 
 
 ---
