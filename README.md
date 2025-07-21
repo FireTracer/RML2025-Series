@@ -82,17 +82,23 @@ You can download the RML2025 Series datasets from the following sources:
 
 - **Google Drive**: [Download Link](https://drive.google.com/drive/folders/1M4MKGNUSWZrToL2u507NQbPTNcLKIR-0?usp=drive_link)
 - **Baidu Netdisk**: [Download Link](https://pan.baidu.com/s/1alhSU_boq4kBlpH_9A7g5g?pwd=fire) (Extraction Code: `fire`)
-  
-> ⚠️ Note: Please make sure to unzip the files into the `data/` directory to use the provided loading scripts.
-
-
 
 ---
 
 ## 🚀 Usage
 
-Please refer to the corresponding `load_dataset.py` scripts for how to use each dataset.
-
+``` python
+    with open(path, 'rb') as file:
+        Xd = pickle.load(file,encoding='bytes')
+    snrs,mods = map(lambda j: sorted(list(set(map(lambda x: x[j], Xd.keys())))), [1,0])
+    X = []
+    lbl = []
+    for mod in mods:
+        for snr in snrs:
+            X.append(Xd[(mod,snr)])
+            for i in range(Xd[(mod,snr)].shape[0]):  lbl.append((mod,snr))
+    X = np.vstack(X)
+```
 
 ---
 
