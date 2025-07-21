@@ -2,25 +2,12 @@
 
 ## 📌 Overview
 
-The **RML2025 Series** dataset is a benchmark collection specifically designed for evaluating **cross-domain automatic modulation classification (AMC)** methods under realistic and progressively complex communication environments.
-
+The **RML2025 Series** dataset is a benchmark collection specifically designed for evaluating the generalization ability of automatic modulation classification (AMC) model in real communication environments with significant distribution differences.
 
 
 We simulate a variety of physical impairments commonly present in real-world communication systems. These impairments are combined in a structured manner to generate domain shifts with hierarchical complexity, offering a more challenging and realistic benchmark for evaluating cross-domain AMC methods.
 
 These impairments, including various combinations of **noise, multipath fading, carrier frequency offset (CFO), sampling rate offset (SRO), and Doppler shift**, introduce significant distributional shifts and structural damage in the received signals, thereby posing considerable challenges for robust modulation classification. 
-
-
----
-
-## 🧠 Motivation
-
-While existing datasets are useful for standard AMC validation, they fall short in simulating diverse real-world conditions. Specifically:
-
-- Domain shifts in prior benchmarks are often **simplistic or unrealistic**, leading to performance overestimation.
-- Publicly available datasets typically lack **structured cross-domain settings**, limiting the development of domain generalization or adaptation techniques.
-
-To address these gaps, RML2025 Series incorporates multiple types and levels of **channel impairments**, structured across domains with increasing complexity.
 
 ---
 
@@ -39,15 +26,13 @@ Each sample consists of **128 complex-valued IQ points**, and all samples are **
 
 ---
 
-
-
 ---
 
-## 🌐 Domains and Subsets
+## 🌐 Subsets
 
-The RML2025 Series includes **7 domains**, grouped by channel type and impairment severity:
+The RML2025 Series includes **7 subsets**, grouped by channel type and impairment severity:
 
-| Channel | Domain Name | Impairments                     |
+| Channel | Subset Name | Impairments                     |
 |---------|-------------|----------------------------------|
 | AWGN    | `AWGN`      | Gaussian noise only             |
 | Rician  | `Ri1`       | Rician fading                   |
@@ -57,13 +42,11 @@ The RML2025 Series includes **7 domains**, grouped by channel type and impairmen
 | Rayleigh| `Ray2`      | + CFO + SRO                     |
 | Rayleigh| `Ray3`      | + stronger multipath + Doppler  |
 
-> Each dataset introduces increasingly complex domain shifts and structural distortions, enabling **hierarchical evaluation** of model robustness.
-
 ---
 
 ## 🔬 Channel Impairment Details
 
-The following table summarizes the specific impairment parameters across different domains:
+The following table summarizes the specific impairment parameters across different subsets:
 
 Channel Impairment Summary
 
@@ -95,11 +78,11 @@ The following table summarizes the impairment configurations for each dataset va
 
 ## 📥 Dataset Download
 
-You can download the RML2025Series datasets from the following sources:
+You can download the RML2025 Series datasets from the following sources:
 
 - **Google Drive**: [Download Link](https://drive.google.com/drive/folders/1M4MKGNUSWZrToL2u507NQbPTNcLKIR-0?usp=drive_link)
 - **Baidu Netdisk**: [Download Link](https://pan.baidu.com/s/1alhSU_boq4kBlpH_9A7g5g?pwd=fire) (Extraction Code: `fire`)
-(waiting load...)
+  
 > ⚠️ Note: Please make sure to unzip the files into the `data/` directory to use the provided loading scripts.
 
 
